@@ -49,11 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  // subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
+    emoji(
+      "⚡ Creation of several evacuation plans in the security field on Autocad"
+    )
     // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     // emoji(
     //   "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
@@ -97,9 +100,9 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "Autocad",
-      fontAwesomeClassname: "fab fa-regular fa-building"
-    },
+      skillName: "Auto Cad 2D",
+      fontAwesomeClassname: "fas fa-building"
+    }
     // {
     //   skillName: "sql-database",
     //   fontAwesomeClassname: "fas fa-database"
@@ -130,23 +133,25 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName:
+        "Higher Institute of Applied Sciences and Technology of Sousse",
+      logo: require("./assets/images/issat2.png"),
+      subHeader: "Diploma in Computer Systems Engineering",
+      duration: "2019 - 2022"
+      // desc: "Participated in the research of XXX and published 3 papers.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName:
+        "Higher Institute of Applied Sciences and Technology of Sousse",
+      logo: require("./assets/images/issat2.png"),
+      subHeader: "Master's Degree in Pervasive Computer Systems",
+      duration: "2022 - Ongoing"
+      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -158,15 +163,19 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "70%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Mobile Development",
+      progressPercentage: "75%"
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Auto Cad",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -178,29 +187,36 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      role: "Architect",
+      company: "MIAC",
+      companylogo: require("./assets/images/MIAC.png"),
       date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Creation of several evacuation plans in the security field on Autocad for different companies (Elegance Shoes, Hutchinson Tunisie, AMS, General Fish)"
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Final Course Project Internship",
+      company: "MIAC / SWATECH",
+      companylogo: require("./assets/images/MIAC.png"),
+      date: "Feb 2022 - Jul 2022",
+      desc: "The goal of this project is to create an IoT system that detects failures or the lack of firefighting equipment. This system enables data exchange between a nodeMCU card, pressure sensors for RIAs, and dry contact sensors for fire extinguishers. After deployment, we can measure RIA terminal pressures to identify failures or detect missing fire extinguishers."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Développeur Full-Stack",
+      company: "Creo",
+      companylogo: require("./assets/images/creo.webp"),
+      date: "2021 – 2022 for 6 months",
+      desc: "Digital transformation, development of static websites, e-commerce platforms, web and mobile applications, Graphic design. Corporate identity, digital marketing, SEO... \n\nDevelopment of a management platform for a doctor's office."
+    },
+    {
+      role: "Co-host",
+      company: "MIAC",
+      companylogo: require("./assets/images/MIAC.png"),
+      date: "Feb 2024 – Ongoing",
+      desc: "Conducting training in the areas of building safety, vehicle fleet and vehicle maintenance."
     }
   ]
 };
@@ -210,35 +226,155 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/primo.png"),
+      projectName: "Primo Bike Shop",
+      projectDesc:
+        "This is a landing page for a fictional bike shop. It's made with HTML and CSS. It contains 5 sections: services, about, clients, milestones, and contact.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://primo-bike-shop.pages.dev/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/kinedoc.png"),
+      projectName: "Kine Doc",
+      projectDesc:
+        "KineDoc is an innovative platform that allows you to quickly find a doctor closest to you and schedule an appointment online for free.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://kinedocrdv.fr/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/iberConseil.png"),
+      projectName: "Iber Conseil",
+      projectDesc:
+        "IBER, presents itself as your trusted advisor in the real estate world.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://iber.pages.dev/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/MIAC.png"),
+      projectName: "MIAC Consulting",
+      projectDesc:
+        "MIAC Consulting was made to promote client services and trainings. It contains several pages: Services, Training, and Contact.\nTechnologies used: HTML, CSS, JavaScript and Next.js",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://www.miaconsulting.com.tn/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nasr website.png"),
+      projectName: "Nasr Hospitality",
+      projectDesc:
+        'Nasr Hospitality Consulting was made to promote client services and trainings. It contains several pages: "About us", "Services", "Career", "Online Certificate" and "News". Also it\'s translated in 4 different languages.\nTechnologies used: HTML, CSS, JavaScript, PHP',
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://nasrhospitality.com"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/toDoApp.webp"),
+      projectName: "To Do App",
+      projectDesc:
+        'The app contains a light and dark mode filters to display only completed or in progress to-do and finally a "drag and drop" feature to rearrange your to-do.',
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/Todo-app-website/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/rockPaperScissors.webp"),
+      projectName: "Rock Paper Scissors",
+      projectDesc:
+        "Probably the toughest one, it's a Rock Paper Scissors game, you choose what you want to play, then after a moment, you see what the house picked.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/Rock-Paper-Scissors-game-Website/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/calculatorApp.webp"),
+      projectName: "Calculator",
+      projectDesc:
+        "This is the first App I created when I got back to web development. Although it's a simple project, it was quite challenging.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/launchCountDownApp.webp"),
+      projectName: "Launch Count Down App",
+      projectDesc:
+        "I never expected to get such a result from a simple countdown. As you can see, it's a web countdown.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/Launch-countdown-timer-Website-Challenge"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/3columnPreviewCardApp.webp"),
+      projectName: "3-Column Preview Card",
+      projectDesc:
+        "This project was an easy one, it's a good way to practice layout and responsiveness.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/3-column-preview-card-component--Website/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/statsPreviewCardComponent.webp"),
+      projectName: "Stats preview card component",
+      projectDesc: "A simple frontend project.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/Stats-preview-card-component-Website/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/sunnySieAgencyLandingPage.webp"),
+      projectName: "Sunnyside agency landing page",
+      projectDesc:
+        "My first landing page, or my second project. It's a landing page for both mobile and desktop.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://skagitwork.github.io/Sunnyside-agency-landing-page/"
         }
       ]
     }
@@ -256,53 +392,54 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title:
+        "Adobe PhotoShop & Adobe Illustrator, IT service institute of the Sahel (ISIS)",
+      // subtitle:
+      // "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      image: require("./assets/images/ISIS.jpg"),
+      imageAlt: "IT service institute of the Sahel (ISIS) Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        //   {
+        //     name: "Certification",
+        //     url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        //   },
+        //   {
+        //     name: "Award Letter",
+        //     url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        //   },
+        //   {
+        //     name: "Google Code-in Blog",
+        //     url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        //   }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Surveillance Cameras, Alarm Systems and Time Clock, Zoom Academy",
+      // subtitle:
+      // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      image: require("./assets/images/zoomAcademy.jpg"),
+      imageAlt: "Zoom Academy Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
       ]
     }
+
+    // {
+    //   title: "PWA Web App Developer",
+    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+    //   image: require("./assets/images/pwaLogo.webp"),
+    //   imageAlt: "PWA Logo",
+    //   footerLink: [
+    //     {name: "Certification", url: ""},
+    //     {
+    //       name: "Final Project",
+    //       url: "https://pakistan-olx-1.firebaseapp.com/"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -328,7 +465,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -347,7 +484,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -360,25 +497,25 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+216 92 640 172",
+  email_address: "denguezli.iskander@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
